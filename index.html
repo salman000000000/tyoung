@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<style>
+    .container{
+  max-width: 1170px;
+    }
+    
+    h1,h2,h3,h4,h5,p,a{
+       font-family: 'Open Sans' ,sans-serif;
+        
+    
+    }
+    h1{
+        line-height: 55px;
+    }
+    h2,h3,h4,h5{
+      line-height: 40px;
+    }
+    h1{
+        font-size: 48px;
+        font-weight: 700 !important;
+     color:#0c4d92;
+
+    }
+   
+    h1{
+     
+    }
+    h2{
+        font-size: 40px;    }
+        h3{
+        font-size: 34px;    }
+        h4{
+        font-size: 21px;    }
+        h5{
+          font-size: 18px; 
+        }
+        p{
+        font-size: 14px;    }
+        .nav-item a{
+        font-size: 18px;  
+    color:#0c4d92!important;
+    font-weight: 600;
+  }
+  .nav-link{
+padding: 0px;
+  } 
+  li{
+    font-weight: 540;
+    position: relative;
+  }
+        .moblie{
+            display:none
+        }
+        
+        .item1 {
+         padding-right: 0px;
+        }
+        .item2 {
+         padding-left: 0px;
+        }
+        .navbar-nav .nav-item a:after{
+            position: absolute;
+    left: 50%;
+    top: 104%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #bf9b1c;
+    content: "";
+    transition: .3s;
+    width: 10%;
+    opacity: 0;
+        }
+        .navbar-nav .nav-item a:hover:after{ 
+            width: 100%;
+    opacity: 2;}
+.bgsecfrist{
+    background-image: url('./img/banner-area.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   ;
+}
+.nav-item{
+  padding:0px 12px !important;
+}.min{
+min-height: 600px;
+}
+.back-img{
+    background-image: url('./img/banner-2.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+     
+}
+.sectwobg h2{
+  font-weight: 600;
+}
+.bgsecfrist a{
+    font-size: 22px;
+    font-weight: 700;
+    padding:10px 30px;
+    background-color: #fe3c38 !important;
+    border: none;
+}
+.nme{
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+ 
+}
+.sectwobg{
+  background-color:#eff5fe;
+
+
+
+}
+
+.pt-100{
+  padding-top:100px;
+}
+.secoiiner1{
+  gap:20px
+}
+.pt-20{
+  padding-top: 20px;
+}
+.pb-100{
+  padding-bottom: 100px;
+}
+.pb-20{
+padding-bottom: 20px;
+}
+.pt-30{
+  padding-top: 30px;
+  
+}
+.pb-40{
+  padding-bottom: 40px;
+}
+.pt-40{
+  padding-top: 40px;
+}
+.pt-10{
+  padding-top: 10px;
+}.pb-10{
+  padding-bottom:20px;
+}
+.pt-50{
+  padding-top: 50px;
+}
+.pb-50{
+  padding-bottom: 50px;
+}
+.pt-80{
+  padding-top: 80px;
+}
+.bluecolors{
+  color:#034ea1;
+  font-weight: 600;
+}
+.secbgfour{
+  background-color: #0c4d92;
+}
+.secbgfour h1 , .secbgfour h5 {
+  color:white;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url('./img/minus.png') !important;
+
+
+}
+.accordion-button::after{
+  background-image: url('./img/plus.png') !important;
+  
+  background-position:center ;
+  background-size: cover;
+  
+}
+
+.accordion-button:not(.collapsed){
+  background-color:white!important;
+
+}
+.accordion-button:naot(.collapsed){
+        box-shadow: none;
+    }
+    .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+button.accordion-button{
+  padding: 20px 0px;
+}
+.accordion-body{
+  padding: 0px 0px 20px;
+}
+.five1{
+background-image: url('./img/DSC_2020-scaled.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+min-height:330px;
+margin-top: 20px;
+margin-right: 10px;
+background-position: center;
+align-content: end;
+color:white;
+position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+
+
+}
+.knock{
+  margin: 30px 60px 0px 0px;
+}
+.five1:hover{
+  margin-top:-5px !important;
+  background-image: linear-gradient(180deg,transparent,rgba(3,78,161)) , url('./img/DSC_2020-scaled.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;}
+
+.five1 h4{
+padding: 20px;
+font-weight: 600;
+line-height: 20px;
+}
+
+
+.boxshodow{
+  
+  box-shadow:  0 60px 135px rgba(0, 0, 0, .14), 0 15px 65px rgba(0, 0, 0, .14);
+
+border-radius:20px;
+padding: 20px 0px;
+
+align-items: center;
+
+
+}
+.lstsecond h1 {
+  font-size: 62px !important;
+  font-weight: 600 !important;
+  margin-bottom: 30px;
+}
+.secd{
+  margin-top:50px
+}
+.lstsecond h4{
+  line-height: 27px !important;
+}
+.coheight{
+  min-height: 320px;
+}
+.cosec img{
+ max-width: 100%;
+}
+.right{
+  margin: 40px 40px 0px 80px;
+}
+footer h6 a{
+  text-decoration: none;
+  color:black !important;
+  font-weight: 600 !important;
+}
+footer h6{
+  color:black;
+  font-weight: 500;
+  line-height: 30px;
+
+}
+button{
+  background-color: #0c4d92;
+  
+  border:4px solid white;
+  padding: 10px 25px;
+  color:white;
+  font-weight: 700;
+}
+.swper{
+  background-color:#f2f2f2;
+  
+}
+.swperiner{
+  background-color:#f2f2f2;
+  box-shadow : 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 0px 0 rgba(0, 0, 0, 0.19);
+  padding:10px;
+  
+  height: 210px;
+    min-height: 210px;
+}
+.clr,.clr1{
+  color:#0c477f;
+}
+.swiper-slide{
+  padding:10px
+}
+.swperiner1{
+  background-color: white;
+
+  padding: 30px;
+  border-radius:20px
+}
+.swperiner1 .igname{
+border-radius: 80px;
+
+}
+.boos{
+  gap:50px
+}
+.clr1{
+  line-height: 20px;
+}
+.myslider2{
+padding: 10px 30px;
+}
+
+
+.swiper-pagination{
+  position: relative !important;
+  margin-top: 30px;
+}
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper-pagination-bullet-active {
+      color: #fff;
+      background: #007aff;
+    }
+    @media (min-width:300px) and (max-width:700px){
+      .yutude{
+        width:400px;
+        height:250px
+      }
+      .knock{
+        margin:0px;
+      }
+      .right{
+        margin:40px
+      }
+      .secbgfour{
+        text-align: center;
+      }
+      .nme{
+        margin:10px 0px
+      }
+      .secd img{
+        margin-left: 30px;
+      }
+      .coheight{
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .eidtor iframe{
+        width:400px;
+      }
+      .back-img{
+        background-size:55%;
+        background-position: center 230px;
+      }
+
+      .moblie{
+        display: block;
+        width:80%
+      }
+      .pt-100{
+        padding-top: 50px;
+      }
+      .pb-100{
+        padding-bottom: 50px;
+      }
+    }
+</style>
+
+
+<body>
+    <header class="mt-3">
+        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+    
+          <a class="navbar-brand moblie href="#"><img src="./img/logo.png" width="50%"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav item1 mb-2 mb-lg-0 d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Courses we offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why SRM</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand  m-0" href="#"><img src="./img/logo.png" width="270px" height="115px"></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Placements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+      
+          
+            
+          </div>
+        </nav>
+        </div>
+ 
+    </header>
+    <section class="bgsecfrist" id="nmae">
+        <div class="back-img">
+            <div class="container">
+                <div class="row align-items-center justify-content-center min m-0">
+                    <div class="col-lg-5 p-0   ">
+                    <div>
+                        <h1>
+                            BE THE GRADUATE
+                            WITH A TOP JOB
+                        </h1>
+                    <a class="btn btn-danger " href="#" role="button">Registrations Open for 2024</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-2 ">
+ 
+                    </div>
+                    <div class="col-lg-5"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  <!--section 2-->
+  <section class="sectwobg pt-100 pb-100">
+    <div class="container ">
+    
+      <div class="row  secoiiner1 justify-content-center align-items-center pt-10">
+        <h2 class="text-center">Accreditations
+        </h2>
+        <div class="col-lg-4 text-center" ><div class="nme">
+
+          <h4>
+            Highest 'A++' Grade
+
+          </h4>
+          <div class="d-flex align-items-center">
+            <p >SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.</p>
+          <img src="./img/r-2.png" width="36%"></mg>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center">
+
+          <div class="nme">
+            <h4>
+              Highest 'A++' Grade
+  
+            </h4>
+            <div class="d-flex align-items-center">
+              <p >SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.</p>
+            <img src="./img/r-2.png" width="36%"></mg>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row pt-50 secoiiner justify-content-center align-items-center ">
+      <h2 class="text-center pb-10">Accreditations
+      </h2>
+      <div class="col-lg-4 text-center" ><div class="nme">
+
+        <h4>
+          Highest 'A++' Grade
+
+        </h4>
+        <div class="d-flex align-items-center">
+          <p >SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.</p>
+        <img src="./img/r-2.png" width="36%"></mg>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+
+        <div class="nme">
+          <h4>
+            Highest 'A++' Grade
+
+          </h4>
+          <div class="d-flex align-items-center">
+            <p >SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.</p>
+          <img src="./img/r-2.png" width="36%"></mg>
+          </div>
+
+
+
+      </div>
+    </div>
+    <div class="col-lg-4 text-center">
+
+      <div class="nme">
+        <h4>
+          Highest 'A++' Grade
+
+        </h4>
+        <div class="d-flex align-items-center">
+          <p >SRM Institute of Science and Technology has been accredited by NAAC with the highest 'A++' grade.</p>
+        <img src="./img/r-2.png" width="36%"></mg>
+        </div>
+
+
+
+    </div>
+  </div>
+  </div>
+  </section>
+
+
+<!--section3-->
+<section class="pt-100 pb-100 text-center bluecolor">
+  <div class="container ">
+    <div class="row  ">
+      <div class="col-lg-12 ">
+
+        <h2 class="bluecolors">
+          Join the Premier Institution Ranked #1 University in India
+
+        </h2>
+        <h5 class="pt-40">Experience the best of placements with academic excellence. SRM IST, Ramapuram is a <br>
+          place for learning, discovery, innovation, expression, and discourse.
+          
+          </h5>
+          <iframe width="800" height="450" src="https://www.youtube.com/embed/YxMB6limtf0?rel=0" class="pt-40 yutude"></iframe> 
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section4-->
+ <section class="pt-50 pb-50 secbgfour">
+  <div class="container">
+    <div class="row  justify-content-center  text-center ">
+      <div class="col-lg-4"> 
+        <div>
+          <h1>12,000<sup>+</sup> </h1>
+          <h5> Offers</h5>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div>
+          <h1>12,000<sup>+</sup></h1>
+          <h5> Companies Visited</h5>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div>
+          <h1>1.1 Crore</h1>
+          <h5> Highest Package</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!--secon5-->
+ <section class="pt-100 pb-100">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+   <h3>Courses We Offer and Eligibility Criteria</h3>
+  <!--accordian -->
+  <div class="accordion accordion-flush knock" id="accordionFlushExample" >
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      </div>
+    </div>
+ <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #4
+        </button>
+      </h2>
+      <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #5
+        </button>
+      </h2>
+      <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #6
+        </button>
+      </h2>
+      <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    
+   
+    <div class="col-lg-5">
+      <img src="./img/step-to-follow-1.png">
+    </div>
+  </div>
+</div>
+
+
+ </section>
+
+<!--slider-->
+<section class="swper pt-100 pb-100">
+  <div class="container">
+    <div class="row">
+
+<h2 class="text-center bluecolors">Placements at SRM IST Ramapuram
+</h2>
+      <div class="col-lg-12 pt-4">  <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swperiner">
+               <img src="./img/rupee.png">
+               <h6 class="clr pt-2">Virtual Campus Placements During COVID-19</h6>
+               <h6 class="pt-2">625+ Top Companies visited with Exciting Job Offers</h6>
+            </div>
+          </div>
+          <div class="swiper-slide">  <div class="swperiner">
+            <img src="./img/rupee.png">
+            <h6 class="clr pt-2">Virtual Campus Placements During COVID-19</h6>
+            <h6 class="pt-2">625+ Top Companies visited with Exciting Job Offers</h6>
+         </div></div>
+          <div class="swiper-slide"><div class="swperiner">
+            <img src="./img/rupee.png">
+            <h6 class="clr pt-2">Virtual Campus Placements During COVID-19</h6>
+            <h6 class="pt-2">SRM IST displays the best professional outcomes for students with impeccable placement records each year!</h6>
+         </div></div>
+          <div class="swiper-slide">
+            <div class="swperiner">
+              <img src="./img/rupee.png">
+              <h6 class="clr pt-2">Virtual Campus Placements During COVID-19</h6>
+              <h6 class="pt-2">625+ Top Companies visited with Exciting Job Offers</h6>
+           </div>
+          </div>
+        
+        </div>
+        <div class="swiper-pagination"></div>
+      </div></div>
+
+      <!--secomd slider-->
+      <div class="col-lg-12 pt-4 myslider2">  <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swperiner1 text-center">
+              <div class="d-flex boos">
+                <img src="./img/png1.png" class="igname" width="100px" >
+               <img src="./img/logo1.png" width="100px" >
+              </div>
+               <h4 class="clr1 pt-4">Virtual Campus </h4>
+               <p class="pt-2 mb-0">Btech-cse</p>
+               <h5 class="pt-2" ><b>625+ Top Companies visited  </b></h5>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+ 
+ <!--section 5-->
+ <section class="sectwobg  pt-100 pb-100">
+  <div class="container">
+    <div class="row align-items-center ">
+      <h2 class="text-center bluecolors">Why SRM IST Ramapuram</h2>
+      <p class="text-center pt-4">We focus on the enlightenment and enhancement of the students.
+<br>We offer various facilities for the benefits of the students to make the learning environment a better place for them.
+
+</p>
+
+      
+      <div class="col-lg-3 pt-50 "><div class="five1">
+<h4>Placement in the Fortune 5oo companies</h4></div></div>
+      <div class="col-lg-3 pt-50 "><div class="five1"> <h4> located with in Chennai city</h4></div></div>
+      <div class="col-lg-3 pt-50 "><div class="five1"> <h4>Semester Abroad Program in 9+ countries</h4></div></div>
+      <div class="col-lg-3 pt-50 "><div class="five1"> <h4>International Internships</h4></div></div>
+      <div class="col-lg-3 pt-80 "><div class="five1"> <h4>Support for Innovation & Start-ups</h4></div></div>
+      <div class="col-lg-3 pt-80 "><div class="five1"> <h4>Vibrant Campus Life</h4></div></div>
+      <div class="col-lg-3 pt-80 "><div class="five1"> <h4>Fully Equipped Hostel Facilities</h4></div></div>
+      <div class="col-lg-3 pt-80 "><div class="five1"> <h4>State-of-the-Art Infrastructure</h4></div></div>
+     
+    </div>
+  </div>
+ </section>
+
+ <section class="lstsecond">
+  <div class="container pt-100 pb-100">
+    <div class="row justify-content-center boxshodow align-items-center ">
+     <div class="col-lg-4 coheight ">
+      <div class="text-center"> 
+        <h1>17</h1>
+        <h4 class="bluecolors">Institutions</h4>
+       </div>
+       <div class="secd"> 
+      <img class=" mb-4" src="https://registration.srmrmp.edu.in/images/couneter-img.png">
+        <h4 class="bluecolors text-center">From the family of</h4>
+       </div>
+    </div>   
+     <div class="col-lg-4 cosec coheight">
+      <img src="./img/IST-SRM-IST-logo-0sdf1.png">
+    </div>
+     <div class="col-lg-4 coheight">
+      <div class="text-center"> 
+        <h1>4</h1>
+        <h4 class="bluecolors">Institutions</h4>
+       </div>
+       <div class="text-center pt-50"> 
+        <h1 >#1</h1>
+        <h4 class="bluecolors ">SRM IST Ranked India’s No.1
+          University</h4>
+       </div>
+     </div>
+    </div>
+  </div>
+ </section>
+<!--call secrtiion-->
+<section class="secbgfour pt-40 pb-40">
+  <div class="container ">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-10">
+<h3 class="text-white">Join India's #1 Ranked deemed to be University</h3>
+      </div>
+      <div class="col-lg-2">
+        <a href="#nmae"> <button> Apply Now</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--image slider-->
+<section  class="pt-100 pb-100">
+  <div class="container-fluid">
+    <div class="row">
+      <h2 class="text-center bluecolors">A Campus That You Will Love</h2>
+      <div class="swiper mySwiper3 pt-50">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/New-Project-11 (1).png" width="100%">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/New-Project-11-2.png  " width="100%">
+          </div>
+          <div class="swiper-slide">  <img src="./img/New-Project-11 (1).png" width="100%"></div>
+          <div class="swiper-slide"> <img src="./img/New-Project-11-2.png" width="100%"></div>
+          <div class="swiper-slide">  <img src="./img/New-Project-11 (1).png" width="100%"></div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+<section class="swper">
+  <div class="container pt-100 pb-100">
+    <div class="row">
+      <h2 class="text-center bluecolors">Student Testimonials</h2>
+      <div class="col-lg-12 pt-50">
+        <div class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swperiner4">
+                <div class="eidtor">
+                <iframe width="350px" height="180px"  src="https://www.youtube.com/embed/LUkqSZpU3a0?si=h1fq45sZgormIAlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          
+                 <p class="text-center pt-4">Mehul Choudhary
+<br>
+                  Fractal Analytics - 14.25 LPA
+                  <br>
+                  SRM IST Ramapuram Alumni</p>
+                 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swperiner4">
+                <div class="eidtor">
+                <iframe width="350px" height="180px"  src="https://www.youtube.com/embed/LUkqSZpU3a0?si=h1fq45sZgormIAlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          
+                 <p class="text-center pt-4">Mehul Choudhary
+<br>
+                  Fractal Analytics - 14.25 LPA
+                  <br>
+                  SRM IST Ramapuram Alumni</p>
+                 
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swperiner4">
+                <div class="eidtor">
+                <iframe width="350px" height="180px"  src="https://www.youtube.com/embed/LUkqSZpU3a0?si=h1fq45sZgormIAlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          
+                 <p class="text-center pt-4">Mehul Choudhary
+<br>
+                  Fractal Analytics - 14.25 LPA
+                  <br>
+                  SRM IST Ramapuram Alumni</p>
+                 
+              </div>
+            </div>
+           
+          
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--call secrtiion2-->
+<section class="secbgfour pt-40 pb-40">
+  <div class="container ">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-10">
+<h3 class="text-white">Join India's #1 Ranked deemed to be University</h3>
+      </div>
+      <div class="col-lg-2">
+        <a href="#nmae"> <button> Apply Now</button></a>
+      </div>
+    </div>
+  </div>
+</section>
+ <footer>
+  <div class="container-fluid">
+    <div class="row  align-items-center">
+      <div class="col-lg-6 p-0">
+        <img src="./img/IST_Map_Light.jpg" width="100%">
+      </div>
+      <div class="col-lg-6">
+
+      <div class="text-center">
+        <img src="./img/icon-IST.jpg">
+        <h6>Bharathi Salai, Ramapuram,<br>
+          Chennai – 600 089. Tamil Nadu India</h6>
+      </div>
+     <div class="d-flex justify-content-between  right align-items-center ">
+       <div class="text-center"> 
+             <img src="./img/icon-IST-1.jpg">
+             <h6><a href="tel:1800 102 1525">
+              1800 102 1525</a></h6>
+       </div>
+       <div class="text-center">
+        <img src="./img/icon-IST.png">
+             <h6><a href="tel:1800 102 1525">
+              helpdesk@srmrmp.edu.in</a></h6>
+       </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <script>
+  var swiper1 = new Swiper(".mySwiper1", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay:true, 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  var swiper3 = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay:true, 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+    },
+  });
+  var swiper4 = new Swiper(".mySwiper4", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay:true, 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>
+</body>
+</html>
